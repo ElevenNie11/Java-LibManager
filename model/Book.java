@@ -54,6 +54,6 @@ public class Book {
 
     @Override
     public String toString(){
-        return isbn + "/" + title +"/" + author + " :" + "馆藏" + totalCount + "本" + ";" + "可借阅" + getAvailableCount() +"本" ;
+        return isbn + "/" + title + "/" + author + " :" + "馆藏" + totalCount + "本" + ";" + "可借阅" + getAvailableCount() +"本" ;
     }
 }
