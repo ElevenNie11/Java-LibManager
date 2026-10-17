@@ -10,7 +10,7 @@ public class BusinessException extends RuntimeException {
 // 不用像受检异常那样强制写 try-catch，上层统一捕获给用户提示
 // super(message)调用父类 RuntimeException 的构造，把错误信息传给父类保存，后续可以用 e.getMessage() 获取提示文字
 
-// 关键是继承 RuntimeException（属于**非受检异常**）
+// 关键是继承 RuntimeException（属于“非受检异常”）
 // 抛出它的时候，方法上不需要写 throws 声明，调用方也不用必须强制try-catch
 // 对比：如果继承Exception，就是受检异常，所有调用代码都要强制捕获或声明抛出，很麻烦
 
